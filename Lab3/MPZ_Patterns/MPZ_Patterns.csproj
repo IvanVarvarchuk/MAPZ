@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\advmap_rr.bmp" />
+    <None Remove="Resources\backframe.bmp" />
+    <None Remove="Resources\frigate.gif" />
+    <None Remove="Resources\GameResources\cannonshot.png" />
+    <None Remove="Resources\GameResources\golden_coin.png" />
+    <None Remove="Resources\GameResources\powder.png" />
+    <None Remove="Resources\GameResources\silver_coin.png" />
+    <None Remove="Resources\seaterrain.png" />
+    <None Remove="Resources\Water.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\advmap_rr.bmp" />
+    <Resource Include="Resources\backframe.bmp" />
+    <Resource Include="Resources\frigate.gif" />
+    <Resource Include="Resources\GameResources\cannonshot.png" />
+    <Resource Include="Resources\GameResources\golden_coin.png" />
+    <Resource Include="Resources\GameResources\powder.png" />
+    <Resource Include="Resources\GameResources\silver_coin.png" />
+    <Resource Include="Resources\seaterrain.png" />
+    <Resource Include="Resources\Water.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\Icons\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.0" />
+  </ItemGroup>
+
+</Project>
